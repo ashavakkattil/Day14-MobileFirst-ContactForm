@@ -1,0 +1,94 @@
+:root {
+  --primary-color: #485e74;
+  --light: #c9e6ff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 1rem;
+  background: #92bde7;
+  color: var(--primary-color);
+}
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+}
+ul {
+  list-style: none;
+}
+
+input {
+  padding: 0.8rem;
+  border: 1px solid var(--light);
+}
+textarea {
+  border: 1px solid var(--light);
+}
+.btn {
+  background: var(--light);
+  text-transform: uppercase;
+  padding: 0.8rem 0;
+  margin: 1rem 0 0 0;
+}
+.container {
+  max-width: 1170px;
+  display: grid;
+  justify-content: center;
+  padding: 1rem;
+  grid-template-columns: 1fr;
+}
+.branding {
+  margin: 2.3rem 0 1rem 0;
+  text-align: center;
+}
+.branding span {
+  color: #fff;
+}
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+/* Company Info block - light blue box */
+.info {
+  padding: 1.3rem 1rem;
+  background: var(--light);
+  text-align: center;
+}
+.info h3 {
+  margin-bottom: 0.8rem;
+}
+.contact li {
+  display: grid;
+  grid-template-columns: 0.02fr 0.35fr;
+  justify-content: center;
+  align-items: baseline;
+}
+.contact li i {
+  justify-self: end;
+}
+
+/* contact -form block - white block*/
+.contact-form {
+  background: #f9feff;
+  padding: 1rem;
+}
+.contact-form h3 {
+  margin: 0.5rem 0 1rem 0;
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.form .form-group{
+  display: grid;
+}
+.form .full{
+  grid-column: 1/3;
+}
